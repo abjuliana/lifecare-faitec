@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,7 +23,7 @@
     <link href="/assets/style.css" rel="stylesheet">
 
     <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">/* Chart.js */
-@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:50%;height:200%;left:0;top:0}</style></head>
 
 <body class="pace-done">
 <div class="pace  pace-inactive">
@@ -39,7 +40,8 @@
         <div class="row border-bottom">
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                        <i class="fa fa-sign-out"></i> LifeCare
+                    <img class="navbar-brand-logo" src="/assets/LogoLifeCare.png" >
+
 
                     </i> </a>
                     <form role="search" class="navbar-form-custom" action="http://webapplayers.com/inspinia_admin-v2.9.4/search_results.html">
@@ -148,6 +150,11 @@
                         </ul>
                     </li>
 
+                    <li>
+                        <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " aria-current="page"
+                           href="#" role="button" aria-expanded="false">Sobre</a>
+                    </li>
+
 
                     <li>
                         <a href="http://webapplayers.com/inspinia_admin-v2.9.4/login.html">
@@ -158,19 +165,45 @@
                 </ul>
 
             </nav>
-        </div>
-
-        <div class="wrapper wrapper-content">
-            <div layout:fragment="body"></div>
-            <h1>Software de monitoramento da rotina de idosos</h1>
-
-            <h1>Um software ágil e prático para</h1>
-            <h1> facilitar a sua vida e de todos</h1>
-            <h1>  a sua volta! </h1>
-
 
         </div>
-        <img alt="" src="/assets/idosos.jpg">
+        <div class="container content-space-t-3">
+            <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="mb-5">
+                        <h1 class="display-4 text-dark mb-5">Bem vindo ao <span class="text-primary">LifeCare</span></h1>
+                        <p class="fs-3">Software de monitoramento da rotina de idosos</p>
+                        <p class="fs-4">Um software ágil e prático para facilitar a sua vida e de todos a sua volta!</p>
+                    </div>
+
+                    <div class="d-grid d-sm-flex gap-3 mb-5">
+                        <a class="btn btn-primary" href="#">Crie sua conta agora</a>
+                        <a class="btn btn-ghost-dark btn-pointer" href="#">É simples e gratuito!</a>
+                    </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="/assets/imagemhome.png">
+
+                        </div>
+
+
+
+                        </div>
+                        <!-- End Media -->
+
+                        <!-- Media -->
+                        <!-- End Media -->
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
+
     </div>
 
 </div>
@@ -980,3 +1013,5 @@
 </script>
 </body>
 </html>
+
+
