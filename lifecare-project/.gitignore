@@ -7,3 +7,5 @@
 .vscode/
 __MACOSX/
 *.DS_Store
+
+**/*.rar
