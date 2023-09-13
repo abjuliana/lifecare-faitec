@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #61C2A2;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 0px;
+            width: 500px;
+            height: 750px;
+            
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group button {
+            background-color: #FFFFFF;
+            color: none;
+            border: #000000;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        } 
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Cadastre-se</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Nome completo</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Tipo de perfil</label>
+                Cuidador: <input type="radio" id="typeprofile" name="typeprofile" required>
+                Contratante: <input type="radio" id="typeprofile" name="typeprofile" required>
+                Co-responsável: <input type="radio" id="typeprofile" name="typeprofile" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirme sua senha</label>
+                <input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Criar conta</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+        });
+    </script>
+</body>
+</html>

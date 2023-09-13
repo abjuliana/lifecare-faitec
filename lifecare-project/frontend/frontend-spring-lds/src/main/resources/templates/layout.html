@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,7 +23,7 @@
     <link href="/assets/style.css" rel="stylesheet">
 
     <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">/* Chart.js */
-@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:50%;height:200%;left:0;top:0}</style></head>
 
 <body class="pace-done">
 <div class="pace  pace-inactive">
@@ -31,59 +32,25 @@
 
         </div>
     </div>
-    <div class="pace-activity">
 
-    </div>
 </div>
 <div id="wrapper">
-    <nav class="navbar-default navbar-static-side" role="navigation">
-        <div class="sidebar-collapse">
-            <ul class="nav metismenu" id="side-menu">
-                <li class="nav-header">
-                    <div class="dropdown profile-element">
-                        <img alt="" class="rounded-circle" src="/assets/profile_small.jpg">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="http://webapplayers.com/inspinia_admin-v2.9.4/index.html#">
-                            <span class="block m-t-xs font-bold">André Silva</span>
-                            <span class="text-muted text-xs block">Cuidador <b class="caret"></b></span>
-                        </a>
-                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a class="dropdown-item" href="http://webapplayers.com/inspinia_admin-v2.9.4/profile.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="http://webapplayers.com/inspinia_admin-v2.9.4/contacts.html">Contacts</a></li>
-                            <li><a class="dropdown-item" href="http://webapplayers.com/inspinia_admin-v2.9.4/mailbox.html">Mailbox</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="http://webapplayers.com/inspinia_admin-v2.9.4/login.html">Logout</a></li>
-                        </ul>
-                    </div>
-                    <div class="logo-element">
-                        Lifecare
-                    </div>
-                </li>
-                <li class="active">
-                    <a href="http://webapplayers.com/inspinia_admin-v2.9.4/index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Menu</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse in" aria-expanded="true">
-                        <li class="active"><a href="http://webapplayers.com/inspinia_admin-v2.9.4/index.html">Rotina</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-
-        </div>
-    </nav>
 
     <div id="page-wrapper" class="gray-bg dashbard-1">
         <div class="row border-bottom">
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="http://webapplayers.com/inspinia_admin-v2.9.4/index.html#"><i class="fa fa-bars"></i> </a>
+                    <img class="navbar-brand-logo" src="/assets/LogoLifeCare.png" >
+
+
+                    </i> </a>
                     <form role="search" class="navbar-form-custom" action="http://webapplayers.com/inspinia_admin-v2.9.4/search_results.html">
                         <div class="form-group">
-                            <input type="text" placeholder="Procurar..." class="form-control" name="top-search" id="top-search">
                         </div>
                     </form>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
                     <li style="padding: 20px">
-                        <span class="m-r-sm text-muted welcome-message">Bem vindo ao LifeCare.</span>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="http://webapplayers.com/inspinia_admin-v2.9.4/index.html#">
@@ -183,130 +150,73 @@
                         </ul>
                     </li>
 
+                    <li>
+                        <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " aria-current="page"
+                           href="#" role="button" aria-expanded="false">Sobre</a>
+                    </li>
+
 
                     <li>
                         <a href="http://webapplayers.com/inspinia_admin-v2.9.4/login.html">
-                            <i class="fa fa-sign-out"></i> Sair
+                            <i class="fa fa-sign-out"></i> Entrar
                         </a>
                     </li>
-                    <li>
-                        <a class="right-sidebar-toggle">
-                            <i class="fa fa-tasks"></i>
-                        </a>
-                    </li>
+
                 </ul>
 
             </nav>
-        </div>
 
-        <div class="wrapper wrapper-content">
-            <div layout:fragment="body"></div>
         </div>
+        <div class="container content-space-t-3">
+            <div class="row justify-content-lg-between align-items-lg-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="mb-5">
+                        <h1 class="display-4 text-dark mb-5">Bem vindo ao <span class="text-primary">LifeCare</span></h1>
+                        <p class="fs-3">Software de monitoramento da rotina de idosos</p>
+                        <p class="fs-4">Um software ágil e prático para facilitar a sua vida e de todos a sua volta!</p>
+                    </div>
 
+                    <div class="d-grid d-sm-flex gap-3 mb-5">
+                        <a class="btn btn-primary" href="#">Crie sua conta agora</a>
+                        <a class="btn btn-ghost-dark btn-pointer" href="#">É simples e gratuito!</a>
+                    </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="/assets/imagemhome.png">
+
+                        </div>
+
+
+
+                        </div>
+                        <!-- End Media -->
+
+                        <!-- Media -->
+                        <!-- End Media -->
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
 
     </div>
 
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-    <div class="footer">
-        <div class="float-right">
-            10GB of <strong>250GB</strong> Free.
-        </div>
-        <div>
-            <strong>Copyright</strong> LifeCare Company © 2023
-        </div>
-    </div>
-</div>
-<div class="small-chat-box fadeInRight animated">
-
-    <div class="heading" draggable="true">
-        <small class="chat-date float-right">
-            02.19.2015
-        </small>
-        Small chat
-    </div>
-
-    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;"><div class="content" style="overflow: hidden; width: auto; height: 234px;">
-
-        <div class="left">
-            <div class="author-name">
-                Monica Jackson <small class="chat-date">
-                10:02 am
-            </small>
-            </div>
-            <div class="chat-message active">
-                Lorem Ipsum is simply dummy text input.
-            </div>
-
-        </div>
-        <div class="right">
-            <div class="author-name">
-                Mick Smith
-                <small class="chat-date">
-                    11:24 am
-                </small>
-            </div>
-            <div class="chat-message">
-                Lorem Ipsum is simpl.
-            </div>
-        </div>
-        <div class="left">
-            <div class="author-name">
-                Alice Novak
-                <small class="chat-date">
-                    08:45 pm
-                </small>
-            </div>
-            <div class="chat-message active">
-                Check this stock char.
-            </div>
-        </div>
-        <div class="right">
-            <div class="author-name">
-                Anna Lamson
-                <small class="chat-date">
-                    11:24 am
-                </small>
-            </div>
-            <div class="chat-message">
-                The standard chunk of Lorem Ipsum
-            </div>
-        </div>
-        <div class="left">
-            <div class="author-name">
-                Mick Lane
-                <small class="chat-date">
-                    08:45 pm
-                </small>
-            </div>
-            <div class="chat-message active">
-                I belive that. Lorem Ipsum is simply dummy text.
-            </div>
-        </div>
 
 
-    </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div></div>
-    <div class="form-chat">
-        <div class="input-group input-group-sm">
-            <input type="text" class="form-control">
-            <span class="input-group-append"> <button class="btn btn-primary" type="button">Send
-                </button> </span></div>
-    </div>
+
+
+
 
 </div>
-<div id="small-chat">
 
-    <span class="badge badge-warning float-right">5</span>
-    <a class="open-small-chat" href="#">
-        <i class="fa fa-comments"></i>
-
-    </a>
-</div>
 <div id="right-sidebar" class="animated">
     <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
 
@@ -1103,3 +1013,5 @@
 </script>
 </body>
 </html>
+
+
