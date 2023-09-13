@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CuidadorController {
 
     @GetMapping("/home")
-    public String getCuidadorPage() {return "/cuidador/main"; }
+    public String getCuidadorPage() {
+        return "/cuidador/main";
+    }
 
 
 }

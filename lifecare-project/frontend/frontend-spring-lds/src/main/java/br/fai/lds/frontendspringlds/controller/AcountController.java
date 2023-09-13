@@ -6,13 +6,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/home")
+@RequestMapping("/account")
 public class AcountController {
 
+    @GetMapping("/password")
+    public String getPasswordPage() {
+        return "/acount/password";
+    }
 
-        @GetMapping("/password")
-        public String getPasswordPage() {return "/acount/password"; }
+    @GetMapping("/login")
+    public String getLoginPage() {
+        return "/acount/login";
+    }
 
+    @GetMapping("/register")
+    public String getRegisterPage() {
+        return "/acount/register";
+    }
 }
 
 
