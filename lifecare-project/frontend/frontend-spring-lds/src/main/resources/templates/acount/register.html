@@ -6,8 +6,8 @@
     <title>Cadastre-se</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #FFFFFF;
+            font-family: Helvetica;
+            background-color: #FFFFFF
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,12 +18,12 @@
 
         .login-container {
             background-color: #61C2A2;
-            padding: 50px;
+            padding: 200px;
             border-radius: 5px;
             box-shadow: 0 0 0px;
             width: 500px;
             height: 750px;
-            
+
         }
 
         .form-group {
@@ -49,12 +49,12 @@
             padding: 10px 20px;
             border-radius: 3px;
             cursor: pointer;
-        } 
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>Cadastre-se</h2>
+        <h2>Criar Conta</h2>
         <form id="login-form">
             <div class="form-group">
                 <label for="username">Nome completo</label>
@@ -74,17 +74,27 @@
                 <label for="password">Confirme sua senha</label>
                 <input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
             </div>
-            
+
             <div class="form-group">
                 <button type="submit">Criar conta</button>
             </div>
+
+            <div class="navbar-header">
+                <img class="navbar-brand-logo" src="/assets/emojione.png" >
+
+
+                </i> </a>
+                <form role="search" class="navbar-form-custom" action="http://webapplayers.com/inspinia_admin-v2.9.4/search_results.html">
+                    <div class="form-group">
+                    </div>
+
         </form>
     </div>
 
     <script>
         document.getElementById('login-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
         });
     </script>
 </body>
