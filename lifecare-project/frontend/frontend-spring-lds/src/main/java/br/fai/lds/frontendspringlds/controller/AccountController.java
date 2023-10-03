@@ -7,21 +7,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/account")
-public class AcountController {
+public class AccountController {
 
     @GetMapping("/password")
     public String getPasswordPage() {
-        return "/acount/password";
+        return "/account/password";
     }
 
     @GetMapping("/login")
     public String getLoginPage() {
-        return "/acount/login";
+        return "/account/login";
     }
 
     @GetMapping("/register")
     public String getRegisterPage() {
-        return "/acount/register";
+        return "/account/register";
     }
 }
 
