@@ -1,0 +1,12 @@
+Apontamentos para correções da 3 entrega:
+
+-Diagrama de sequências
+	- corrigir as iterações adicionando o usuário no início do diagrama
+	- corrigir o simbolo do ator que está representando o banco de dados
+	- Verificar se todas as iterações estão sendo representadas incluse as mensagens de retorno
+-Diagrama de Pacotes
+	- Verificar quais pacotes foram identificados no projeto
+	- Identificando a arquitetura geral do projeto
+- Diagram dos componentes da arquitetura (Classes dentro dos pacotes)
+	- identificar quais as classes de cada componente o diagrama está muito genérico
+	- identificar os relacionamentos existentes entre os componentes e as classes do projeto
