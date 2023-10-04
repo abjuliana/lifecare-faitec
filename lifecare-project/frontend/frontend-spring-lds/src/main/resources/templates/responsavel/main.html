@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+
+<html layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsável</title>
+</head>
+<body>
+<div layout:fragment="body">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/d=0/rs=AN8SPfp0QXhhaDDdjg_LgcSqoZiPEzC1tw/m=el_main_css"></head>
+
+    <body class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress-inner"></div>
+    </div>
+        <div class="pace-activity"></div></div>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="" class="rounded-circle" src="/assets/profile_small.jpg">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Luiz Roberto</font></font></span>
+                                <span class="text-muted text-xs block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Responsável por José Augusto</font></font><b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perfil</font></font></a></li>
+                                <li><a class="dropdown-item" href="contacts.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contatos</font></font></a></li>
+                                <li><a class="dropdown-item" href="mailbox.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caixa de correio</font></font></a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sair</font></font></a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                            DENTRO+
+                        </font></font></div>
+                    </li>
+                    <li class="">
+                        <a href="index.html" aria-expanded="false"><i class="fa fa-th-large"></i> <span class="nav-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menu</font></font></span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
+                            <li class="active"><a href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rotina</font></font></a></li>
+                            <li><a href="dashboard_2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Meu perfil</font></font></a></li>
+                            <li><a href="dashboard_3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caixa de mensagens</font></font></a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+
+                <li class="dropdown">
+                    <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="" class="rounded-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="float-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="" class="rounded-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a class="dropdown-item float-left" href="profile.html">
+                                    <img alt="" class="rounded-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html" class="dropdown-item">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="float-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+                    </ul>
+
+                    </nav>
+            </div>
+
+
+            <div class="row  border-bottom white-bg dashboard-header">
+
+                <div class="col-md-3">
+                    <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bem-vindo</font></font></h2>
+                    <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você tem 3 mensagens não lidas</font></font></small>
+                    <ul class="list-group clear-list m-t">
+                        <li class="list-group-item fist-item">
+                                <span class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    09:00
+                                </font></font></span>
+                            <span class="label label-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Novo remédio para a diabetes
+                            </font></font></li>
+
+                        <li class="list-group-item">
+                                <span class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                   11:00
+                                </font></font></span>
+                            <span class="label label-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font>
+                        </span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> A aula de costura mudou para as 14:00
+                        </font></font></li>
+                        <li class="list-group-item">
+                                <span class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                    13:00
+                                </font></font></span>
+                            <span class="label label-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></span>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Beber bastante água
+                            </font></font></li>
+                    </ul>
+
+                </div>
+                <div  class =" col-md-6 " >
+                    <div  class =" flot-chart dashboard-chart " >
+                        <div  class =" flot-chart-content " id =" flot-dashboard-chart " estilo =" preenchimento: 0px; posição: relativo; " >
+                            <div class =" flot-text " style =" posição: absoluto; inserção: 0px; tamanho da fonte: menor; cor: rgb(84, 84, 84); ">
+                                <div  class =" flot- eixo x flot-x1-axis xAxis x1Axis " style =" position:absolute;
+		left:25%;
+		top:10%;
+		margin-left:-110px;
+		margin-top:-40px; " >
+                                    <img  alt ="" class ="" src =" /assets/grafico.png " >
+                                    </canvas > </div>
+                            </div>
+
+                        </div>
+
+                        <div class=" m-l-md">
+                            <span class="h5 font-bold m-t block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span>
+                            <small class="text-muted m-b block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Relatório de marketing de vendas</font></font></small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <span class="h5 font-bold m-t block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span>
+                        <small class="text-muted m-b block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Receita anual de vendas</font></font></small>
+                    </div>
+                    <div class="col">
+                        <span class="h5 font-bold m-t block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></span>
+                        <small class="text-muted m-b block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Margem de receita semestral</font></font></small>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="ibox ">
+                                    <div class="ibox-title">
+                                        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nome dos remédios</font></font></h5> <span class="label label-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar
+                                    </font></font></span>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div>
+
+                                            <div class="float-right text-right">
+
+
+                                            </div>
+                                            <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Remédio da tireóide : Levotiroxina Sódica 50mcg </h4>
+                                            <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Remédio da diabetes : Milgamma 150mg
+
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibox ">
+                                    <div class="ibox-title">
+                                        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comentários</font></font></h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <a class="close-link" href="">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content no-padding">
+                                        <ul class="list-group">
+                                            <li class="list-group-item ">
+                                                <p><a class="text-info" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@Luiz Antônio</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, hoje a pressão está 13/9 (pós almoço)</font></font></p>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 hora atrás</font></font></small>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p><a class="text-info" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@Luiz Antônio</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, diabetes estava alta no período da tarde</font><font style="vertical-align: inherit;">,aplicado insulina.</font></font></p>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 minuto atrás</font></font></small>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <p><a class="text-info" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@Luiz Antônio</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, fomos a missa às 15h</font></font></p>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 minutos atrás</font></font></small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="ibox ">
+                                    <div class="ibox-title">
+                                        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rotina do dia de José Augusto </font></font></h5>
+                                        <div class="ibox-tools">
+                                            <span class="label label-warning-light float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar
+                                            </font></font></span>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+
+                                        <div>
+                                            <div class="feed-activity-list">
+
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/remedio.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7:00h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ao acordar e em jejum,</font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> remédio tireóide </font></font><br>
+                                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">remédio tireóide</font></font></small>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/cafe.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7:30h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Café da manhã,</font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">de acordo com a dieta</font></font><font style="vertical-align: inherit;"></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font></font><br>
+                                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoje 14h10 - 12/06/2014</font></font></small>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/local.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8:30h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Passeio na praça,</font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> caso queira</font></font><strong><font style="vertical-align: inherit;"></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font></font><br>
+                                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 dias atrás às 8h30</font></font></small>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/ludico.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right text-navy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9:30h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atividade lúdica</font></font></strong><font style="vertical-align: inherit;"></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font></font><br>
+
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/almoço.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11:00h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Almoço</font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,de acordo com a dieta </font> </font></font><br>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/dormir.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cochilo pós almoço</font></font>
+
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/remedio.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15:00h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Remédio de pressão</font></font>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/local.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">17:00h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aula de costura no CRAS</font></font>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/almoço.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19:00h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Janta</font></font>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="feed-element">
+                                                    <a class="float-left" href="profile.html">
+                                                        <img alt="" class="rounded-circle" src="/assets/almoço.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">21:00h</font></font></small>
+                                                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ceia, com alguma fruta</font></font>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mostre mais</font></font></button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="ibox ">
+                                    <div class="ibox-title">
+                                        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recados importantes dos cuidados diários</font></font></h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                                </li>
+                                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                                </li>
+                                            </ul>
+                                            <a class="close-link" href="">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content ibox-heading">
+                                        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Deve ser feito todos os dias</font></font></h3>
+                                    </div>
+                                    <div class="ibox-content inspinia-timeline">
+
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col content no-top-border">
+                                                    <p class="m-b-xs"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre as medicações</font></font></strong></p>
+
+                                                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reméio da tireóide sempre em jejum. </font><font style="vertical-align: inherit;">A insulina somente em caso de necessidade. </font><font style="vertical-align: inherit;", ela sempre fica na caixa térmica.</font></font></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Movimentar</font></font></strong></p>
+                                                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sempre tentar caminhar de 15 a 30 min por dia, seja no quintal ou na rua.</font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pressão / Diabetes</font></font></strong></p>
+                                                    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        Medir a pressão e a diabetes pelo menos 1x ao dia, favor enviar no chat o resultado.</font>
+                                                    </font></font></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exemplo de direitos autorais</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> LifeCare © 2023
+                </font></font></div>
+            </div>
+        </div>
+        <div class="small-chat-box fadeInRight animated">
+
+            <div class="heading" draggable="true">
+                <small class="chat-date float-right">
+                    02.19.2015
+                </small>
+                Chat
+            </div>
+
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;"><div class="content"style="overflow: hidden; width: auto; height: 234px;">
+
+                <div class="left">
+                    <div class="author-name">
+                        Luiz Roberto
+                        <small class="chat-date">
+                        10:02 am
+                    </small>
+                    </div>
+                    <div class="chat-message active">
+                        Bom dia! Hoje a aula de costura será 30 min mais cedo
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="author-name">
+                        André Silva
+                        <small class="chat-date">
+                            11:24 am
+                        </small>
+                    </div>
+                    <div class="chat-message">
+                        Ok! Muito obrigado
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="author-name">
+                        Luiz Antônio
+                        <small class="chat-date">
+                            08:45 pm
+                        </small>
+                    </div>
+                    <div class="chat-message active">
+                        Por favor, medir a pressão pós almoço
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="author-name">
+                        André Silva
+                        <small class="chat-date">
+                            11:24 am
+                        </small>
+                    </div>
+                    <div class="chat-message">
+                        Ok!
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="author-name">
+                        Mick Lane
+                        <small class="chat-date">
+                            08:45 pm
+                        </small>
+                    </div>
+                    <div class="chat-message active">
+                        I belive that. Lorem Ipsum is simply dummy text.
+                    </div>
+                </div>
+
+
+            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div></div>
+            <div class="form-chat">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control">
+                    <span class="input-group-append"> <button class="btn btn-primary" type="button">Send
+                </button> </span></div>
+            </div>
+
+        </div>
+        <div id="small-chat">
+
+            <span class="badge badge-warning float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></span>
+            <a class="open-small-chat" href="">
+                <i class="fa fa-comments"></i>
+
+            </a>
+        </div>
+        <div id="right-sidebar" class="animated">
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
+
+                <ul class="nav nav-tabs navs-3">
+                    <li>
+                        <a class="nav-link active" data-toggle="tab" href="#tab-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Notas</font></font></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#tab-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Projetos</font></font></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#tab-3"> <i class="fa fa-gear"></i> </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Últimas notas</font></font></h3>
+                            <small><i class="fa fa-tim"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Você tem 10 novas mensagens.</font></font></small>
+                        </div>
+
+                        <div>
+
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a1.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                                        Existem muitas variações de passagens de Lorem Ipsum disponíveis.
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoje 16h21</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a2.jpg">
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        O objetivo de usar Lorem Ipsum é que ele tem mais ou menos normalidade.
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ontem às 14h45</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Evoluí ao longo dos anos, às vezes por acidente, às vezes de propósito (injetando humor e coisas do gênero).
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ontem às 13h10</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a4.jpg">
+                                    </div>
+
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Lorem Ipsum, você precisa ter certeza de que não há nada embaraçoso escondido na
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">segunda-feira às 20h37.</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a8.jpg">
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                                        Todos os geradores Lorem Ipsum na Internet tendem a se repetir.
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoje 16h21</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a7.jpg">
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Renascimento. </font><font style="vertical-align: inherit;">A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..", vem de uma linha na seção 1.10.32.
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ontem às 14h45</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        O pedaço padrão de Lorem Ipsum usado desde 1500 é reproduzido abaixo.
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ontem às 13h10</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="float-left text-center">
+                                        <img alt="" class="rounded-circle message-avatar" src="img/a4.jpg">
+                                    </div>
+                                    <div class="media-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                        Descubra muitos sites ainda em sua infância. </font><font style="vertical-align: inherit;">Várias versões têm.
+                                    </font></font><br>
+                                        <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Segunda-feira, 20h37</font></font></small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary float-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small float-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary float-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small float-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> Settings</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        Show notifications
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Desativar bate-papo
+                    </font></font></span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Ativar histórico
+                    </font></font></span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Mostrar gráficos
+                    </font></font></span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Usuários off-line
+                    </font></font></span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Pesquisa global
+                    </font></font></span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        Atualizar todos os dias
+                    </font></font></span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Configurações</font></font></h4>
+                            <div class="small"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                Eu acredito que. </font><font style="vertical-align: inherit;">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. </font><font style="vertical-align: inherit;">E indústria tipográfica. </font><font style="vertical-align: inherit;">Lorem Ipsum tem sido o texto fictício padrão da indústria desde o século XVI. </font><font style="vertical-align: inherit;">Ao longo dos anos, às vezes por acidente, às vezes de propósito (injetado humor e coisas do gênero).
+                            </font></font></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 798.438px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 1px;"></div></div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+
+    <div class="toast toast-bootstrap fade hide" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top:20px; right:20px">
+        <div class="toast-header">
+            <i class="fa fa-square text-navy"> </i>
+            <strong class="mr-auto m-l-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Notificação</font></font></strong>
+            <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 minuto atrás</font></font></small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
+                <span aria-hidden="true"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">×</font></font></span>
+            </button>
+        </div>
+        <div class="toast-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Você tem uma nova </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mensagem</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        </font></font></div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-XRWCKMHSS2&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            let toast = $('.toast');
+
+            setTimeout(function() {
+                toast.toast({
+                    delay: 5000,
+                    animation: true
+                });
+                toast.toast('show');
+
+            }, 2200);
+
+            var data1 = [
+                [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,30],[11,10],[12,13],[13,4],[14,3],[15,3],[16,6]
+            ];
+            var data2 = [
+                [0,1],[1,0],[2,2],[3,0],[4,1],[5,3],[6,1],[7,5],[8,2],[9,3],[10,2],[11,1],[12,0],[13,2],[14,8],[15,0],[16,0]
+            ];
+            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+                data1, data2
+            ],
+                    {
+                        series: {
+                            lines: {
+                                show: false,
+                                fill: true
+                            },
+                            splines: {
+                                show: true,
+                                tension: 0.4,
+                                lineWidth: 1,
+                                fill: 0.4
+                            },
+                            points: {
+                                radius: 0,
+                                show: true
+                            },
+                            shadowSize: 2
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+                            tickColor: "#d5d5d5",
+                            borderWidth: 1,
+                            color: '#d5d5d5'
+                        },
+                        colors: ["#1ab394", "#1C84C6"],
+                        xaxis:{
+                        },
+                        yaxis: {
+                            ticks: 4
+                        },
+                        tooltip: false
+                    }
+            );
+
+            var doughnutData = {
+                labels: ["App","Software","Laptop" ],
+                datasets: [{
+                    data: [300,50,100],
+                    backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
+                }]
+            } ;
+
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+            var doughnutData = {
+                labels: ["App","Software","Laptop" ],
+                datasets: [{
+                    data: [70,27,85],
+                    backgroundColor: ["#a3e1d4","#dedede","#9CC3DA"]
+                }]
+            } ;
+
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
+            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+        });
+
+        $(window).bind("scroll", function () {
+            let toast = $('.toast');
+            toast.css("top", window.pageYOffset + 20);
+
+        });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-4625583-2', 'webapplayers.com');
+        ga('send', 'pageview');
+
+    </script>
+
+
+    <style>
+.light-skin {
+    padding: 30px 10px;
+    text-align: center;
+    background: url(css/patterns/ls.png) repeat scroll 0 110px;
+}
+.light-skin:hover {
+    background: url(css/patterns/ls.png) repeat scroll 0 140px;
+}
+.ultra-skin {
+    padding: 10px 10px;
+}
+.light-skin a {
+    color: #525252;
+    font-weight: bold;
+}
+</style>
+</div>
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Texto original</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Avalie a tradução</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">O feedback vai ser usado para ajudar a melhorar o Google Tradutor</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Tradução boa" aria-label="Tradução boa" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Tradução ruim" aria-label="Tradução ruim" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div><script>
+    // Config box
+
+
+
+    // Enable/disable fixed top navbar
+    $('#fixednavbar2').click(function (){
+        if ($('#fixednavbar2').is(':checked')){
+            $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+            $("body").removeClass('boxed-layout');
+            $("body").addClass('fixed-nav').addClass('fixed-nav-basic');
+            $('#boxedlayout').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'on');
+            }
+        } else {
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav').removeClass('fixed-nav-basic');
+            $('#fixednavbar').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'off');
+            }
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed sidebar
+    $('#fixedsidebar').click(function (){
+        if ($('#fixedsidebar').is(':checked')){
+            $("body").addClass('fixed-sidebar');
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9
+            });
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedsidebar",'on');
+            }
+        } else{
+            $('.sidebar-collapse').slimScroll({destroy: true});
+            $('.sidebar-collapse').attr('style', '');
+            $("body").removeClass('fixed-sidebar');
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedsidebar",'off');
+            }
+        }
+    });
+
+    // Enable/disable collapse menu
+    $('#collapsemenu').click(function (){
+        if ($('#collapsemenu').is(':checked')){
+            $("body").addClass('mini-navbar');
+            SmoothlyMenu();
+
+            if (localStorageSupport){
+                localStorage.setItem("collapse_menu",'on');
+            }
+
+        } else{
+            $("body").removeClass('mini-navbar');
+            SmoothlyMenu();
+
+            if (localStorageSupport){
+                localStorage.setItem("collapse_menu",'off');
+            }
+        }
+    });
+
+    // Enable/disable boxed layout
+    $('#boxedlayout').click(function (){
+        if ($('#boxedlayout').is(':checked')){
+            $("body").addClass('boxed-layout');
+            $('#fixednavbar').prop('checked', false);
+            $('#fixednavbar2').prop('checked', false);
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+            $("body").removeClass('fixed-nav-basic');
+            $(".footer").removeClass('fixed');
+            $('#fixedfooter').prop('checked', false);
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixednavbar2",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedfooter",'off');
+            }
+
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'on');
+            }
+        } else{
+            $("body").removeClass('boxed-layout');
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed footer
+    $('#fixedfooter').click(function (){
+        if ($('#fixedfooter').is(':checked')){
+            $('#boxedlayout').prop('checked', false);
+            $("body").removeClass('boxed-layout');
+            $(".footer").addClass('fixed');
+
+            if (localStorageSupport){
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedfooter",'on');
+            }
+        } else{
+            $(".footer").removeClass('fixed');
+
+            if (localStorageSupport){
+                localStorage.setItem("fixedfooter",'off');
+            }
+        }
+    });
+
+    // SKIN Select
+    $('.spin-icon').click(function (){
+        $(".theme-config-box").toggleClass("show");
+    });
+
+    // Default skin
+    $('.s-skin-0').click(function (){
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+    });
+
+    // Blue skin
+    $('.s-skin-1').click(function (){
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").addClass("skin-1");
+    });
+
+    // Inspinia ultra skin
+    $('.s-skin-2').click(function (){
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-3");
+        $("body").addClass("skin-2");
+    });
+
+    // Yellow skin
+    $('.s-skin-3').click(function (){
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").addClass("skin-3");
+    });
+
+    if (localStorageSupport){
+        var collapse = localStorage.getItem("collapse_menu");
+        var fixedsidebar = localStorage.getItem("fixedsidebar");
+        var fixednavbar = localStorage.getItem("fixednavbar");
+        var fixednavbar2 = localStorage.getItem("fixednavbar2");
+        var boxedlayout = localStorage.getItem("boxedlayout");
+        var fixedfooter = localStorage.getItem("fixedfooter");
+
+        if (collapse == 'on'){
+            $('#collapsemenu').prop('checked','checked')
+        }
+        if (fixedsidebar == 'on'){
+            $('#fixedsidebar').prop('checked','checked')
+        }
+        if (fixednavbar == 'on'){
+            $('#fixednavbar').prop('checked','checked')
+        }
+        if (fixednavbar2 == 'on'){
+            $('#fixednavbar2').prop('checked','checked')
+        }
+        if (boxedlayout == 'on'){
+            $('#boxedlayout').prop('checked','checked')
+        }
+        if (fixedfooter == 'on') {
+            $('#fixedfooter').prop('checked','checked')
+        }
+    }
+</script></body></html>
