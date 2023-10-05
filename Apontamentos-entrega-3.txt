@@ -10,21 +10,17 @@ Apontamentos para correções da 3 entrega:
 - Diagrama dos componentes da arquitetura (Classes dentro dos pacotes)
 	- identificar quais as classes de cada componente o diagrama está muito genérico
 	- identificar os relacionamentos existentes entre os componentes e as classes do projeto
-<<<<<<< HEAD
 
 -Diagrama de componentes/ distribuição
-	- Falta a associação entre o servidor de API e o Servidor Web e o relacionamento entre o Servidor da API  e o 	Cliente -Web não existe
+	- Falta a associação entre o servidor de API e o Servidor Web e o relacionamento entre o Servidor da API  e o Cliente -Web não existe
 
 
 Apontamentos entregas anteriores: 
 
 - Diagrama de CU - Módulo Acompanhamento
-	- Registrar atividades da Rotina não extend de Listar Idoso (ao que eu entendi do projeto esse CU 				extend de manter rotina no módulo de gestão
+	- Registrar atividades da Rotina não extend de Listar Idoso (ao que eu entendi do projeto esse CU extend de manter rotina no módulo de gestão
 	- Módulo Dashboard - Falta especificar os tipos de usuários
 	- Modelo de Acesso -  Cadastrar usuario, Acessar como Visitante não extend de logar 
-	-Modulo de Acesse - Especificar quais usuários podem fazer cada tipo de funcionalidade está generalizado como 	usuário quem pode ser(cuidador, responsável, visitante)
+	-Modulo de Acesse - Especificar quais usuários podem fazer cada tipo de funcionalidade está generalizado como usuário quem pode ser(cuidador, responsável, visitante)
 
 	
-	
-=======
->>>>>>> 5c98543bb4ea4faaed87ded526dff26f28b8e223
