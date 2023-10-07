@@ -1,0 +1,26 @@
+Apontamentos para correções da 3 entrega:
+
+-Diagrama de sequências
+	- corrigir as iterações adicionando o usuário no início do diagrama
+	- corrigir o simbolo do ator que está representando o banco de dados
+	- Verificar se todas as iterações estão sendo representadas incluse as mensagens de retorno
+-Diagrama de Pacotes
+	- Verificar quais pacotes foram identificados no projeto
+	- Identificando a arquitetura geral do projeto
+- Diagrama dos componentes da arquitetura (Classes dentro dos pacotes)
+	- identificar quais as classes de cada componente o diagrama está muito genérico
+	- identificar os relacionamentos existentes entre os componentes e as classes do projeto
+
+-Diagrama de componentes/ distribuição
+	- Falta a associação entre o servidor de API e o Servidor Web e o relacionamento entre o Servidor da API  e o Cliente -Web não existe
+
+
+Apontamentos entregas anteriores: 
+
+- Diagrama de CU - Módulo Acompanhamento
+	- Registrar atividades da Rotina não extend de Listar Idoso (ao que eu entendi do projeto esse CU extend de manter rotina no módulo de gestão
+	- Módulo Dashboard - Falta especificar os tipos de usuários
+	- Modelo de Acesso -  Cadastrar usuario, Acessar como Visitante não extend de logar 
+	-Modulo de Acesse - Especificar quais usuários podem fazer cada tipo de funcionalidade está generalizado como usuário quem pode ser(cuidador, responsável, visitante)
+
+	
