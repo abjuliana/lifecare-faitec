@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html layout:decorate="~{layout}">
+<head>
+  <meta charset="UTF-8">
+  <title>Listar Idoso</title>
+</head>
+<body>
+<div layout:fragment="body">
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Toastr style -->
+  <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+  <!-- Gritter -->
+  <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/d=0/rs=AN8SPfp0QXhhaDDdjg_LgcSqoZiPEzC1tw/m=el_main_css"></head>
+
+  <body class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+    <div class="pace-progress-inner"></div>
+  </div>
+    <div class="pace-activity"></div></div>
+  <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element">
+              <img alt="" class="rounded-circle" src="/assets/profile_small.jpg">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span class="block m-t-xs font-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">André Silva</font></font></span>
+                <span class="text-muted text-xs block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuidador</font></font><b class="caret"></b></span>
+              </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li><a class="dropdown-item" href="profile.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perfil</font></font></a></li>
+                <li><a class="dropdown-item" href="contacts.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contatos</font></font></a></li>
+                <li><a class="dropdown-item" href="mailbox.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caixa de correio</font></font></a></li>
+                <li class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="login.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sair</font></font></a></li>
+              </ul>
+            </div>
+            <div class="logo-element"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              DENTRO+
+            </font></font></div>
+          </li>
+          <li class="">
+            <a href="index.html" aria-expanded="false"><i class="fa fa-th-large"></i> <span class="nav-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menu</font></font></span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
+              <li class="active"><a href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rotina</font></font></a></li>
+              <li><a href="dashboard_2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Meu perfil</font></font></a></li>
+              <li><a href="dashboard_3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caixa de mensagens</font></font></a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+      <div class="row border-bottom">
+
+        <li class="dropdown">
+          <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+            <li>
+              <div class="dropdown-messages-box">
+                <a class="dropdown-item float-left" href="profile.html">
+                  <img alt="" class="rounded-circle" src="img/a7.jpg">
+                </a>
+                <div class="media-body">
+                  <small class="float-right">46h ago</small>
+                  <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                  <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li>
+              <div class="dropdown-messages-box">
+                <a class="dropdown-item float-left" href="profile.html">
+                  <img alt="" class="rounded-circle" src="img/a4.jpg">
+                </a>
+                <div class="media-body ">
+                  <small class="float-right text-navy">5h ago</small>
+                  <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                  <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li>
+              <div class="dropdown-messages-box">
+                <a class="dropdown-item float-left" href="profile.html">
+                  <img alt="" class="rounded-circle" src="img/profile.jpg">
+                </a>
+                <div class="media-body ">
+                  <small class="float-right">23h ago</small>
+                  <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                  <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li>
+              <div class="text-center link-block">
+                <a href="mailbox.html" class="dropdown-item">
+                  <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <ul class="dropdown-menu dropdown-alerts">
+            <li>
+              <a href="mailbox.html" class="dropdown-item">
+                <div>
+                  <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                  <span class="float-right text-muted small">4 minutes ago</span>
+                </div>
+              </a>
+            </li>
+
+
+
+
+
+          </ul>
+
+          </nav>
+      </div>
+
+
+      <div class="row  border-bottom white-bg dashboard-header">
+
+        <div class="col-md-3">
+          <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bem-vindo, André Silva!</font></font></h2>
+          <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escolha o perfil do idoso que deseja acessar </font></font></small>
+          <ul class="list-group clear-list m-t">
+            <li class="list-group-item fist-item">
+                                <span class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                                </font></font></span>
+              <span class="label label-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span>
+              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Luiz Roberto
+              </font></font></li>
+
+            <li class="list-group-item">
+                                <span class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                                </font></font></span>
+              <span class="label label-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font>
+                        </span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Ana Célia
+            </font></font></li>
+            <li class="list-group-item">
+                                <span class="float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                                </font></font></span>
+              <span class="label label-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></span>
+              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Maria Auxiliadora
+              </font></font></li>
+          </ul>
+
+        </div>
+        <div  class =" col-md-6 " >
+          <div  class =" flot-chart dashboard-chart " >
+            <div  class =" flot-chart-content " id =" flot-dashboard-chart " estilo =" preenchimento: 0px; posição: relativo; " >
+              <div class =" flot-text " style =" posição: absoluto; inserção: 0px; tamanho da fonte: menor; cor: rgb(84, 84, 84); ">
+                <div  class =" flot- eixo x flot-x1-axis xAxis x1Axis " style =" position:absolute;
+		left:25%;
+		top:10%;
+		margin-left:-110px;
+		margin-top:-40px; " >
+
+
+                  </canvas > </div>
+              </div>
+
+            </div>
+
+            </script></body></html>
