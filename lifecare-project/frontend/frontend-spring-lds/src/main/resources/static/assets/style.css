@@ -4963,11 +4963,10 @@ code {
 .ibox-content {
   background-color: #ffffff;
   color: inherit;
-  padding: 15px 20px 20px 20px;
-  border-color: #e7eaec;
-  border-image: none;
-  border-style: solid;
-  border-width: 1px;
+  padding: 80px 20px 20px 20px;
+  text-align: center;
+
+
 }
 .ibox-footer {
   color: inherit;
