@@ -1,205 +1,105 @@
 <!DOCTYPE html>
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Lifecare | Faitec 2023</title>
+        <title>Lifecare | Faitec 2023</title>
 
-    <link href="/assets/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/font-awesome.css" rel="stylesheet">
+        <link href="/assets/bootstrap.min.css" rel="stylesheet">
+        <link href="/assets/font-awesome.css" rel="stylesheet">
 
-    <!-- Toastr style -->
-    <link href="/assets/toastr.min.css" rel="stylesheet">
+        <!-- Toastr style -->
+        <link href="/assets/toastr.min.css" rel="stylesheet">
 
-    <!-- Gritter -->
-    <link href="/assets/jquery.gritter.css" rel="stylesheet">
+        <!-- Gritter -->
+        <link href="/assets/jquery.gritter.css" rel="stylesheet">
 
-    <link href="/assets/animate.css" rel="stylesheet">
-    <link href="/assets/style.css" rel="stylesheet">
+        <link href="/assets/animate.css" rel="stylesheet">
+        <link href="/assets/style.css" rel="stylesheet">
 
-    <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">/* Chart.js */
-@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:50%;height:200%;left:0;top:0}</style></head>
-
-<body class="pace-done">
-<div class="pace  pace-inactive">
-    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-        <div class="pace-progress-inner">
-
-        </div>
-    </div>
-
-</div>
-        <div class="row border-bottom">
-            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <img src="/assets/LogoLifeCare.png" class="img-thumbnail">
+        <style type="text/css">
+            .jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}
 
 
 
-                    </i> </a>
-                    <form role="search" class="navbar-form-custom" action="http://webapplayers.com/inspinia_admin-v2.9.4/search_results.html">
-                        <div class="form-group">
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li style="padding: 20px">
-                    </li>
-                    <li class="dropdown">
-                        <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <a class="dropdown-item float-left" href="http://webapplayers.com/inspinia_admin-v2.9.4/profile.html">
-                                        <img alt="" class="rounded-circle" src="/assets/a7.jpg">
-                                    </a>
-                                    <div class="media-body">
-                                        <small class="float-right">46h ago</small>
-                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
-                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
-                                    </div>
 
 
-                                </div>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <a class="dropdown-item float-left" href="http://webapplayers.com/inspinia_admin-v2.9.4/profile.html">
-                                        <img alt="" class="rounded-circle" src="/assets/a4.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="float-right text-navy">5h ago</small>
-                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
-                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <a class="dropdown-item float-left" href="http://webapplayers.com/inspinia_admin-v2.9.4/profile.html">
-                                        <img alt="" class="rounded-circle" src="/assets/profile.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="float-right">23h ago</small>
-                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
-                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                            <li>
-                                <div class="text-center link-block">
-                                    <a href="http://webapplayers.com/inspinia_admin-v2.9.4/mailbox.html" class="dropdown-item">
-                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-
-                        <ul class="dropdown-menu dropdown-alerts">
-                            <li>
-                                <a href="http://webapplayers.com/inspinia_admin-v2.9.4/mailbox.html" class="dropdown-item">
-                                    <div>
-                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                        <span class="float-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                            <li>
-                                <a href="http://webapplayers.com/inspinia_admin-v2.9.4/profile.html" class="dropdown-item">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="float-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                            <li>
-                                <a href="http://webapplayers.com/inspinia_admin-v2.9.4/grid_options.html" class="dropdown-item">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="float-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                        </ul>
-                    </li>
 
 
-                </ul>
+        </style>
+        <style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:50%;height:200%;left:0;top:0}
 
-            </nav>
 
-        </div>
+
+
+
+
+
+        </style>
+    </head>
+
+    <body class="pace-done">
+        <nav class="navbar navbar-dark" style="background-color: #66CDAA; height:80px;">
+            <img src="/assets/LogoLifeCare.png" style="height:110px;" class="img-thumbnail">
+        </nav>
 
         <div layout:fragment="body">
-
         </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
 
 
+        <!-- Mainly scripts -->
+        <script type="text/javascript" async="" src="/assets/js"></script>
+        <script async="" src="/assets/analytics.js"></script>
+        <script src="/assets/jquery-3.1.1.min.js"></script>
+        <script src="/assets/popper.min.js"></script>
+        <script src="/assets/bootstrap.js"></script>
+        <script src="/assets/jquery.metisMenu.js"></script>
+        <script src="/assets/jquery.slimscroll.min.js"></script>
 
-<!-- Mainly scripts -->
-<script type="text/javascript" async="" src="/assets/js"></script><script async="" src="/assets/analytics.js"></script><script src="/assets/jquery-3.1.1.min.js"></script>
-<script src="/assets/popper.min.js"></script>
-<script src="/assets/bootstrap.js"></script>
-<script src="/assets/jquery.metisMenu.js"></script>
-<script src="/assets/jquery.slimscroll.min.js"></script>
+        <!-- Flot -->
+        <script src="/assets/jquery.flot.js"></script>
+        <script src="/assets/jquery.flot.tooltip.min.js"></script>
+        <script src="/assets/jquery.flot.spline.js"></script>
+        <script src="/assets/jquery.flot.resize.js"></script>
+        <script src="/assets/jquery.flot.pie.js"></script>
 
-<!-- Flot -->
-<script src="/assets/jquery.flot.js"></script>
-<script src="/assets/jquery.flot.tooltip.min.js"></script>
-<script src="/assets/jquery.flot.spline.js"></script>
-<script src="/assets/jquery.flot.resize.js"></script>
-<script src="/assets/jquery.flot.pie.js"></script>
+        <!-- Peity -->
+        <script src="/assets/jquery.peity.min.js"></script>
+        <script src="/assets/peity-demo.js"></script>
 
-<!-- Peity -->
-<script src="/assets/jquery.peity.min.js"></script>
-<script src="/assets/peity-demo.js"></script>
+        <!-- Custom and plugin javascript -->
+        <script src="/assets/inspinia.js"></script>
+        <!--        <script src="/assets/pace.min.js"></script>-->
 
-<!-- Custom and plugin javascript -->
-<script src="/assets/inspinia.js"></script>
-<script src="/assets/pace.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="/assets/jquery-ui.min.js"></script>
 
-<!-- jQuery UI -->
-<script src="/assets/jquery-ui.min.js"></script>
+        <!-- GITTER -->
+        <script src="/assets/jquery.gritter.min.js"></script>
 
-<!-- GITTER -->
-<script src="/assets/jquery.gritter.min.js"></script>
+        <!-- Sparkline -->
+        <script src="/assets/jquery.sparkline.min.js"></script>
 
-<!-- Sparkline -->
-<script src="/assets/jquery.sparkline.min.js"></script>
+        <!-- Sparkline demo data  -->
+        <script src="/assets/sparkline-demo.js"></script>
 
-<!-- Sparkline demo data  -->
-<script src="/assets/sparkline-demo.js"></script>
+        <!-- ChartJS-->
+        <script src="/assets/Chart.min.js"></script>
 
-<!-- ChartJS-->
-<script src="/assets/Chart.min.js"></script>
-
-<!-- Toastr -->
-<script src="/assets/toastr.min.js"></script>
+        <!-- Toastr -->
+        <script src="/assets/toastr.min.js"></script>
 
 
-<script>
+        <script>
         $(document).ready(function() {
 
             let toast = $('.toast');
@@ -304,8 +204,16 @@
             toast.css("top", window.pageYOffset + 20);
 
         });
-    </script>
-<script>
+
+
+
+
+
+
+
+
+        </script>
+        <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -314,10 +222,18 @@
         ga('create', 'UA-4625583-2', 'webapplayers.com');
         ga('send', 'pageview');
 
-    </script>
 
 
-<style>
+
+
+
+
+
+
+        </script>
+
+
+        <style>
 .light-skin {
     padding: 30px 10px;
     text-align: center;
@@ -333,9 +249,17 @@
     color: #525252;
     font-weight: bold;
 }
-</style>
 
-<script>
+
+
+
+
+
+
+
+        </style>
+
+        <script>
     // Config box
 
     // Enable/disable fixed top navbar
@@ -561,8 +485,16 @@
             $('#fixedfooter').prop('checked','checked')
         }
     }
-</script>
-</body>
+
+
+
+
+
+
+
+
+        </script>
+    </body>
 </html>
 
 
