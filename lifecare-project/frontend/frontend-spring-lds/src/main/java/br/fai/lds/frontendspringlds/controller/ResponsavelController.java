@@ -9,8 +9,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ResponsavelController {
 
     @GetMapping("/home")
-    public String getCuidadorPage() {
+    public String getResponsavelPage() {
         return "/responsavel/main";
+    }
+
+    @GetMapping("/criar/remedios")
+    public String getCriarRemediosPage() {
+        return "/responsavel/criar-remedios";
+    }
+
+    @GetMapping("/editar/remedios")
+    public String getEditarRemediosPage() {
+        return "/responsavel/editar-remedios";
     }
 
 
