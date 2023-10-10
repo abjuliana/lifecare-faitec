@@ -13,6 +13,11 @@ public class CuidadorController {
         return "/cuidador/main";
     }
 
+    @GetMapping("/profile")
+    public String getCuidadorPerfilPage() {
+        return "/cuidador/profile";
+    }
+
     @GetMapping("/listaridoso")
     public String getLoginPage() {
         return "/cuidador/listaridoso";
