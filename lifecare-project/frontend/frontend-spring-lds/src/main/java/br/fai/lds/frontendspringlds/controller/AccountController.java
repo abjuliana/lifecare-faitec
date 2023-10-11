@@ -23,6 +23,8 @@ public class AccountController {
     public String getRegisterPage() {
         return "/account/register";
     }
+
+
 }
 
 

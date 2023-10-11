@@ -23,5 +23,9 @@ public class CuidadorController {
         return "/cuidador/listaridoso";
     }
 
+    @GetMapping("/meu-perfil")
+    public String getPerfilPage() {
+        return "/cuidador/meu-perfil";
+    }
 
 }
