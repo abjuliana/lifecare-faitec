@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+    <head>
+        <meta charset="UTF-8">
+        <title>Remover remédio</title>
+    </head>
+    <body>
+        <div layout:fragment="body">
+            <h2 class="text-center">Deseja realmente remover o remédio selecionado?</h2>
+            <div class="text-center">
+                <a th:href="@{/responsavel/criar/remedios}" class="btn btn-danger">Sim</a>
+                <a th:href="@{/responsavel/criar/remedios}" class="btn btn-primary">Não</a>
+            </div>
+        </div>
+    </body>
+</html>

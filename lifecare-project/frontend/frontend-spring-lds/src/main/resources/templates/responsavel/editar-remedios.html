@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html layout:decorate="~{layout}">
-<head>
-    <meta charset="UTF-8">
-    <title>Editar remédios</title>
-</head>
-<body>
-<div layout:fragment="body">
-    <h1>Editar remédios</h1>
+    <head>
+        <meta charset="UTF-8">
+        <title>Editar remédios</title>
+    </head>
+    <body>
+        <div layout:fragment="body">
+            <h2>Editar remédios</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Meu Perfil</a>
+                </li>
+                <li class="breadcrumb-item">
+                    Cuidador
+                </li>
+                <li class="breadcrumb-item active">
+                    Criar Remédio
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Editar Remédio</strong>
+                </li>
+            </ol>
+            <div class="col-12 ibox-content">
+                <h2>
+                    Atualize para o novo nome<span class="text-navy"></span>
+                </h2>
 
-</div>
-</body>
+                <div class="search-form">
+
+                    <form th:action="@{/responsavel/criar/remedios}" method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Escreva aqui"
+                                   aria-label="Admin Theme" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <a th:href="@{/responsavel/criar/remedios}" class="btn btn-primary">Atualizar</a>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
 </html>

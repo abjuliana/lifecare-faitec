@@ -23,5 +23,10 @@ public class ResponsavelController {
         return "/responsavel/editar-remedios";
     }
 
+    @GetMapping("/remover/remedios")
+    public String getRemoverRemediosPage() {
+        return "/responsavel/remover-remedios";
+    }
+
 
 }
