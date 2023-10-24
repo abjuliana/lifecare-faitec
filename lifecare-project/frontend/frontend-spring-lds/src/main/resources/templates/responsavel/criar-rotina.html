@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar rotina</title>
+</head>
+<body>
+<div layout:fragment="body">
+
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-12">
+      <h2>Criar Rotina</h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Meu Perfil</a>
+        </li>
+        <li class="breadcrumb-item">
+          Responsável
+        </li>
+        <li class="breadcrumb-item active">
+          <strong>Criar Rotina</strong>
+        </li>
+      </ol>
+    </div>
+
+    <div class="col-12 ibox-content">
+      <h2>
+        Adicione aqui a nova atividade da rotina com horário<span class="text-navy"></span>
+      </h2>
+
+      <div class="search-form">
+
+        <form th:action="@{/responsavel/criar/remedios}" method="get">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Escreva aqui"
+                   aria-label="Admin Theme" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2">
+                Salvar
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive m-t">
+    <table class="table invoice-table">
+      <thead>
+      <tr>
+        <td>Atividade</td>
+        <td>Horário</td>
+        <td></td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          <h3 style="color:#007bff;">Aula de Costura</h3>
+        </td>
+        <td class="text-left">
+          <span>17:30</span>
+        </td>
+        <td>
+          <a th:href="@{/responsavel/editar/remedios}" class="btn btn-warning">Editar</a>
+          <a th:href="@{/responsavel/remover/remedios}" class="btn btn-danger">Remover</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3 style="color:#007bff;">Aula de bordado as quartas</h3>
+        </td>
+        <td class="text-left">
+          <span>18:30</span>
+        </td>
+        <td>
+          <a th:href="@{/responsavel/editar/remedios}" class="btn btn-warning">Editar</a>
+          <a th:href="@{/responsavel/remover/remedios}" class="btn btn-danger">Remover</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3 style="color:#007bff;">Pilates toda segunda</h3>
+        </td>
+        <td class="text-left">
+          <span>14:00</span>
+        </td>
+        <td>
+          <a th:href="@{/responsavel/editar/remedios}" class="btn btn-warning">Editar</a>
+          <a th:href="@{/responsavel/remover/remedios}" class="btn btn-danger">Remover</a>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+</div>
+</body>
+</html>

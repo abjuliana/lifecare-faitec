@@ -34,18 +34,11 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            <img alt="" class="rounded-circle" src="/assets/profile_small.jpg">
+                            <img alt="" class="rounded-circle" src="/assets/responsavel.jpg">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="block m-t-xs font-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Luiz Roberto</font></font></span>
-                                <span class="text-muted text-xs block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Responsável por José Augusto</font></font><b class="caret"></b></span>
+                                <span class="text-muted text-xs block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Responsável por José </font></font><b class="caret"></b></span>
                             </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a class="dropdown-item" href="profile.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perfil</font></font></a></li>
-                                <li><a class="dropdown-item" href="contacts.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contatos</font></font></a></li>
-                                <li><a class="dropdown-item" href="mailbox.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caixa de correio</font></font></a></li>
-                                <li class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="login.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sair</font></font></a></li>
-                            </ul>
                         </div>
                         <div class="logo-element"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                             DENTRO+
@@ -55,8 +48,7 @@
                         <a href="index.html" aria-expanded="false"><i class="fa fa-th-large"></i> <span class="nav-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menu</font></font></span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
                             <li class="active"><a href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rotina</font></font></a></li>
-                            <li><a href="dashboard_2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Meu perfil</font></font></a></li>
-                            <li><a href="dashboard_3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caixa de mensagens</font></font></a></li>
+                            <li><a class="dropdown-item" th:href="@{/responsavel/meu-perfil}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perfil</font></font></a></li>
                         </ul>
                     </li>
 
@@ -67,11 +59,10 @@
         </nav>
 
         <div id="page-wrapper" class="gray-bg dashbard-1">
-            <div class="row border-bottom">
 
                 <li class="dropdown">
                     <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
-                        <li>
+                       <li>
                             <div class="dropdown-messages-box">
                                 <a class="dropdown-item float-left" href="profile.html">
                                     <img alt="" class="rounded-circle" src="img/a7.jpg">
@@ -137,7 +128,6 @@
                     </ul>
 
                     </nav>
-            </div>
 
 
             <div class="row  border-bottom white-bg dashboard-header">
@@ -224,17 +214,11 @@
                                         </div>
                                     </div>
                                     <div class="ibox-content">
-                                        <div>
-
                                             <div class="float-right text-right">
-
-
                                             </div>
                                             <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Remédio da tireóide : Levotiroxina Sódica 50mcg </h4>
-                                            <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Remédio da diabetes : Milgamma 150mg
+                                            <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Remédio da diabetes : Milgamma 150mg</h4>
 
-                                            </h4>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="ibox ">
@@ -274,10 +258,10 @@
                                 <div class="ibox ">
                                     <div class="ibox-title">
                                         <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rotina do dia de José Augusto </font></font></h5>
-                                        <div class="ibox-tools">
-                                            <span class="label label-warning-light float-right"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar
-                                            </font></font></span>
-                                        </div>
+                                        <a th:href="@{/responsavel/editar/rotina}" class="label label-primary">
+                                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar
+                                            </font></font>
+                                        </a>
                                     </div>
                                     <div class="ibox-content">
 

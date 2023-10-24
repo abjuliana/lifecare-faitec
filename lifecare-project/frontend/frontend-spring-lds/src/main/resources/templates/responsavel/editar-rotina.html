@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar rotina</title>
+</head>
+<body>
+<div layout:fragment="body">
+  <h2>Editar remédios</h2>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="index.html">Meu Perfil</a>
+    </li>
+    <li class="breadcrumb-item">
+      Responsável
+    </li>
+    <li class="breadcrumb-item active">
+      Criar Rotina
+    </li>
+  </ol>
+  <div class="col-12 ibox-content">
+    <h2>
+      Coloque aqui a nova atividade da rotina com horário!<span class="text-navy"></span>
+    </h2>
+
+    <div class="search-form">
+
+      <form th:action="@{/responsavel/criar/rotina}" method="get">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Escreva aqui"
+                 aria-label="Admin Theme" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <a th:href="@{/responsavel/criar/rotina}" class="btn btn-primary">Atualizar</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

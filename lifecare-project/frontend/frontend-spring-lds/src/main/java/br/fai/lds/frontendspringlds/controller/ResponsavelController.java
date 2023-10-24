@@ -28,5 +28,18 @@ public class ResponsavelController {
         return "/responsavel/remover-remedios";
     }
 
+    @GetMapping("/meu-perfil")
+    public String getPerfilPage() {
+        return "/responsavel/meu-perfil";
+    }
+
+    @GetMapping("/editar/rotina")
+    public String getEditarRotinaPage() {return "/responsavel/editar-rotina";}
+
+    @GetMapping("/criar/rotina")
+    public String getCriarRotinaPage() {
+        return "/responsavel/criar-rotina";
+    }
+
 
 }
