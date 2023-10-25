@@ -41,5 +41,12 @@ public class ResponsavelController {
         return "/responsavel/criar-rotina";
     }
 
+    @GetMapping("/editar/nomerotina")
+    public String getEditarNomeRotinaPage() {return "/responsavel/editar-nomerotina";}
+
+    @GetMapping("/remover/atividade")
+    public String getRemoverRotinaPage() {return "/responsavel/remover-atividade";}
+
+
 
 }
